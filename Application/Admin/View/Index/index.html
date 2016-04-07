@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title><{$Think.config.TITLE}></title>
+<script src="__PUBLIC__/Framework/Easyui/jquery.min.js"></script>
+<script src="__PUBLIC__/Framework/Easyui/jquery.easyui.min.js"></script>
+<script src="__PUBLIC__/Framework/Easyui/plugins/jquery.portal.js"></script>
+<script src="__PUBLIC__/Framework/Easyui/locale/easyui-lang-zh_CN.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/Framework/Easyui/themes/bootstrap/easyui.css" id="theme">
+<link rel="stylesheet" href="__PUBLIC__/Framework/Easyui/themes/icon.css">
+<link rel="stylesheet" href="__PUBLIC__/Css/icons.css">
+<script src="__PUBLIC__/Js/jQuery.cookie.js"></script>
+<script src="__PUBLIC__/Js/jQuery.oa.js"></script>
+<script src="__PUBLIC__/Js/easyui.rules.js"></script>
+<!--实例化百度编辑器所在位置-->
+<script>window.UEDITOR_HOME_URL = "__PUBLIC__/Ueditor/";</script>
+<link rel="stylesheet" href="__PUBLIC__/Css/main.css">
+<!--Uploadify上传控件-->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Framework/Uploadify/Huploadify.css"/>
+<script type="text/javascript" src="__PUBLIC__/Framework/Uploadify/jquery.Huploadify.js"></script>
+<!--Uploadify上传控件-->
+</head>
+
+<body class="easyui-layout">
+
+    <!--头部-->
+    <div id="north" data-options="region: 'north'" style="height:80px;overflow:hidden;">
+        <ul class="link-north-head">
+            <li class="pull-left"><h1><{$Think.config.TITLE}>_<{$Think.config.OA_VERSION}></h1></li>
+            <li class="pull-right">
+            	<a href="javascript:void(0);" class="easyui-menubutton" data-options="menu:'#oa-user-menu',iconCls:'icons-user-user'">快捷操作</a>
+            </li>
+        </ul>
+        <div class="link-north-navbar">
+			<ul>
+				<volist name="table_AuthRule" id="table_AuthRule">
+					<li><a href="javascript:void(0);" class="link-navbar-button" data-url="<{:U('Index/getLeftMenu',array('id'=>$table_AuthRule[id]))}>"><{$table_AuthRule.title}></a></li>
+				</volist>
+                
+			</ul>
+        </div>
+    </div>
+    
+    <!--Left-->
+    <div id="west" data-options="region: 'west'" style="width:200px;">
+        <div id="left" class="easyui-accordion" data-options="fit:false,border:false"></div>
+    </div>
+    
+    <!--Center-->
+    <div id="center" data-options="region:'center',fit:false,border:false">
+        <div id="oa-tabs">
+            <div title="后台首页" href="<{:U('Index/main')}>" data-options="cache:true,tools:[{iconCls:'icon-mini-refresh',handler:function(){var tab = $('#oa-tabs').tabs('getSelected');tab.panel('refresh',tab[0]['baseUrl']);}}]"></div>
+        </div>
+    </div>
+    
+    <!--有时会需要两个dialog框-->
+    <div id="oa-dialog-1"></div>
+    <div id="oa-dialog-2"></div>
+
+    <script type="text/javascript">
+        //检测是否登录
+        setInterval('$.Oa.sess_verify(\"<{:U("Login/session_timeout")}>\",\"<{:U("Login/logout")}>\")',10000);
+    </script>
+    <script src="__PUBLIC__/Js/main.js"></script>
+    
+    <!--顶部下拉-->
+    <div id="oa-user-menu">
+        <div>
+            <span>切换主题</span>
+            <div id="toparea-help-theme-box">
+                <div onclick="$.Oa.theme('default')">Easyui</div>
+                <div onclick="$.Oa.theme('bootstrap')">Bootstrap</div>
+                <div onclick="$.Oa.theme('gray')">Gray</div>
+                <div onclick="$.Oa.theme('metro')">Metro</div>
+                <div onclick="$.Oa.theme('black')">Black</div>
+            </div>
+        </div>
+        <div data-options="iconCls:'icons-user-user_go'"><a style="text-decoration: none;color:#333;" href="<{:U('Login/logout')}>">退出登录</a></div>
+    </div>
+    
+</body>
+</html>

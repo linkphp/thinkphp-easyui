@@ -1,0 +1,32 @@
+<div class="easyui-panel" data-options="fit:true,title:'后台首页',border:false,onResize:function(){$('#oa-main-portal').portal({border:false,fit:true});}" style="overflow-x:hidden;">
+	<div id="oa-main-portal">
+		<div style="width:50%">
+			<div title="我的信息" collapsible="true" style="padding:8px;">
+				您好，<{$sess_User['info']['name']}><br />
+				所属角色：<{$Groups}> <br />
+				最后登录IP：<{$last_Login['ip']}><br />
+				最后登录时间：<{$last_Login['date']}><br />
+				最后登录地点：<{$last_Login['country']}><br />
+				最后登录网络：<{$last_Login['area']}>
+			</div>
+
+			<div title="近期登录" collapsible="true" style="padding:8px;">
+				<foreach name="lately_Login" item="lately_Login">
+				[<{$lately_Login.date}>] 登录IP：<{$lately_Login.ip}><br/>
+				</foreach>
+			</div>
+		</div>
+
+		<div style="width:50%">
+
+			<div title="<{$safe_Info.title}>" collapsible="true" style="padding:8px;">
+				<{$safe_Info.content|htmlspecialchars_decode}>
+			</div>
+
+			<div title="<{$system_Info.title}>" collapsible="true" style="padding:8px;">
+				<{$system_Info.content|htmlspecialchars_decode}>
+			</div>
+		</div>
+	</div>
+
+</div>

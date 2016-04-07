@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><h1>Error:404 页面不存在</h1>

@@ -1,0 +1,419 @@
+[ 2016-03-14T11:23:28+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001974s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0076s ]
+NOTIC: [8] Undefined index: validate /Users/link/WWW/thinkphp-easyui/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_user` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `think_user` WHERE `name` = 'admin' AND `pass` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto /Users/link/WWW/thinkphp-easyui/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `think_login_log` [ RunTime:0.0030s ]
+SQL: INSERT INTO `think_login_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`) VALUES ('1','127.0.0.1','2016-03-14 11:23:28','对方在服务器本地登录','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0') [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `think_auth_group_access` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `think_auth_group` [ RunTime:0.0025s ]
+SQL: SELECT User.uid AS uid,AuthGroupAccess.group_id AS group_id,AuthGroup.status AS status FROM think_user User  JOIN think_auth_group_access AuthGroupAccess ON User.uid=AuthGroupAccess.uid  JOIN think_auth_group AuthGroup ON AuthGroup.id=AuthGroupAccess.group_id WHERE ( User.uid = 1 )  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-03-14T11:23:28+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0037s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 1 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 4 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+
+[ 2016-03-14T11:23:29+08:00 ] 127.0.0.1 /admin/index/main?_=1457925808725
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `think_panel` [ RunTime:0.0265s ]
+SQL: SELECT * FROM `think_panel` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_panel` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `think_panel` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_panel` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `think_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_auth_group` [ RunTime:0.0064s ]
+NOTIC: [8] Undefined index: mapping_order /Users/link/WWW/thinkphp-easyui/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Users/link/WWW/thinkphp-easyui/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM think_auth_group_access AS a, think_auth_group AS b WHERE a.group_id = b.id AND a. uid='1' [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_branch` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `think_branch` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `think_job` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_job` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `think_login_log` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `think_login_log` WHERE `uid` = 1 ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_login_log` WHERE `uid` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2016-03-14T11:23:33+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0054s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0011s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 2 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0015s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 8 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 19 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 53 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 62 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0003s ]
+
+[ 2016-03-14T11:23:34+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001994s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0035s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0005s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 3 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0012s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 85 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0030s ]
+
+[ 2016-03-14T11:23:36+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0028s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 2 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 8 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 19 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 53 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 62 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0007s ]
+
+[ 2016-03-14T11:23:37+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0039s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 1 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 4 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0003s ]
+
+[ 2016-03-14T11:23:38+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0002s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 3 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 85 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+
+[ 2016-03-14T11:23:38+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+
+[ 2016-03-14T11:23:41+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 3 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 85 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0003s ]
+
+[ 2016-03-14T11:23:41+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0038s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0005s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 2 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 8 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 19 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 53 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 62 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+
+[ 2016-03-14T11:23:42+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0025s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0002s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 1 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 4 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+
+[ 2016-03-14T11:23:42+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0036s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0008s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 2 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 8 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 19 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 53 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 62 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+
+[ 2016-03-14T11:23:43+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 3 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 85 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0003s ]
+
+[ 2016-03-14T11:23:44+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0046s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 2 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 8 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 19 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 53 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 62 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+
+[ 2016-03-14T11:23:45+08:00 ] 127.0.0.1 /admin/System/Setting?_=1457925808726
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `think_auth_rule` WHERE `name` = 'System/setting' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `think_behavior_log` [ RunTime:0.0030s ]
+SQL: INSERT INTO `think_behavior_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`,`controller_name`,`controller_action`,`json_data`) VALUES ('1','127.0.0.1','2016-03-14 11:23:45','对方在服务器本地操作','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0','执行 系统配置','System/setting','{&quot;GET&quot;:{&quot;_&quot;:&quot;1457925808726&quot;}}') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2016-03-14T11:23:45+08:00 ] 127.0.0.1 /admin/system/setting
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `think_auth_rule` WHERE `name` = 'System/setting' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_behavior_log` [ RunTime:0.0021s ]
+SQL: INSERT INTO `think_behavior_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`,`controller_name`,`controller_action`,`json_data`) VALUES ('1','127.0.0.1','2016-03-14 11:23:45','对方在服务器本地操作','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0','执行 系统配置','System/setting','{&quot;POST&quot;:[]}') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_config` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_config_cate` [ RunTime:0.0027s ]
+SQL: SELECT Config.name AS name,Config.key AS `key`,Config.value AS `value`,Config.default AS `default`,Config.editor AS editor,ConfigCate.title AS `group` FROM think_config Config  JOIN think_config_cate ConfigCate ON Config.config_cate_id=ConfigCate.id  [ RunTime:0.0016s ]
+
+[ 2016-03-14T11:23:46+08:00 ] 127.0.0.1 /admin/Core/Group?_=1457925808727
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-03-14T11:23:46+08:00 ] 127.0.0.1 /admin/core/group
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `think_auth_group` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`title`,`status`,`sort`,id as opert_id FROM `think_auth_group` ORDER BY sort asc LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_auth_group` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2016-03-14T11:23:47+08:00 ] 127.0.0.1 /admin/Branch/index?_=1457925808728
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_auth_rule` WHERE `name` = 'Branch/index' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_behavior_log` [ RunTime:0.0031s ]
+SQL: INSERT INTO `think_behavior_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`,`controller_name`,`controller_action`,`json_data`) VALUES ('1','127.0.0.1','2016-03-14 11:23:47','对方在服务器本地操作','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0','执行 部门管理','Branch/index','{&quot;GET&quot;:{&quot;_&quot;:&quot;1457925808728&quot;}}') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2016-03-14T11:23:47+08:00 ] 127.0.0.1 /admin/branch/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `think_auth_rule` WHERE `name` = 'Branch/index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `think_behavior_log` [ RunTime:0.0020s ]
+SQL: INSERT INTO `think_behavior_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`,`controller_name`,`controller_action`,`json_data`) VALUES ('1','127.0.0.1','2016-03-14 11:23:47','对方在服务器本地操作','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0','执行 部门管理','Branch/index','{&quot;POST&quot;:[]}') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_branch` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title`,`sort`,`branch_id` FROM `think_branch` ORDER BY sort asc  [ RunTime:0.0011s ]
+
+[ 2016-03-14T11:23:48+08:00 ] 127.0.0.1 /admin/Job/index?_=1457925808729
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `think_auth_rule` WHERE `name` = 'Job/index' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_behavior_log` [ RunTime:0.0020s ]
+SQL: INSERT INTO `think_behavior_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`,`controller_name`,`controller_action`,`json_data`) VALUES ('1','127.0.0.1','2016-03-14 11:23:48','对方在服务器本地操作','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0','执行 职务管理','Job/index','{&quot;GET&quot;:{&quot;_&quot;:&quot;1457925808729&quot;}}') [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2016-03-14T11:23:48+08:00 ] 127.0.0.1 /admin/job/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `think_auth_rule` WHERE `name` = 'Job/index' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_behavior_log` [ RunTime:0.0052s ]
+SQL: INSERT INTO `think_behavior_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`,`controller_name`,`controller_action`,`json_data`) VALUES ('1','127.0.0.1','2016-03-14 11:23:48','对方在服务器本地操作','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0','执行 职务管理','Job/index','{&quot;POST&quot;:{&quot;page&quot;:&quot;1&quot;,&quot;rows&quot;:&quot;20&quot;}}') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_job` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_job` ORDER BY sort asc LIMIT 0,20   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_job` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-03-14T11:23:48+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+
+[ 2016-03-14T11:23:52+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0039s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0007s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 3 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 85 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+
+[ 2016-03-14T11:23:55+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0036s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0006s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 2 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 8 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 19 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 53 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 62 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0004s ]
+
+[ 2016-03-14T11:23:55+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 1 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 4 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0003s ]
+
+[ 2016-03-14T11:23:58+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+
+[ 2016-03-14T11:23:59+08:00 ] 127.0.0.1 /admin/job/addjob?_=1457925808730
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `think_auth_rule` WHERE `name` = 'Job/addjob' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_behavior_log` [ RunTime:0.0037s ]
+SQL: INSERT INTO `think_behavior_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`,`controller_name`,`controller_action`,`json_data`) VALUES ('1','127.0.0.1','2016-03-14 11:23:59','对方在服务器本地操作','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0','执行 添加职务','Job/addjob','{&quot;GET&quot;:{&quot;_&quot;:&quot;1457925808730&quot;}}') [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001654s ]
+
+[ 2016-03-14T11:24:04+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0023s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 1 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 4 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0005s ]
+
+[ 2016-03-14T11:24:04+08:00 ] 127.0.0.1 /admin/index/main?_=1457925844682
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001319s ]
+SQL: SHOW COLUMNS FROM `think_panel` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `think_panel` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_panel` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_panel` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_panel` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `think_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_auth_group` [ RunTime:0.0065s ]
+NOTIC: [8] Undefined index: mapping_order /Users/link/WWW/thinkphp-easyui/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Users/link/WWW/thinkphp-easyui/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM think_auth_group_access AS a, think_auth_group AS b WHERE a.group_id = b.id AND a. uid='1' [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_branch` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `think_branch` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `think_job` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `think_job` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `think_login_log` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `think_login_log` WHERE `uid` = 1 ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_login_log` WHERE `uid` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2016-03-14T11:38:22+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004024s ]
+
+[ 2016-03-14T11:38:22+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003168s ]
+

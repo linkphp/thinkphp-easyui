@@ -1,0 +1,92 @@
+[ 2016-04-07T16:25:09+08:00 ] 127.0.0.1 /admin/login/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0175s ]
+NOTIC: [8] Undefined index: validate /Users/link/WWW/thinkphp-easyui/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `think_user` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `think_user` WHERE `name` = 'admin' AND `pass` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto /Users/link/WWW/thinkphp-easyui/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `think_login_log` [ RunTime:0.0045s ]
+SQL: INSERT INTO `think_login_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`) VALUES ('1','127.0.0.1','2016-04-07 16:25:09','对方在服务器本地登录','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36') [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `think_auth_group_access` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `think_auth_group` [ RunTime:0.0051s ]
+SQL: SELECT User.uid AS uid,AuthGroupAccess.group_id AS group_id,AuthGroup.status AS status FROM think_user User  JOIN think_auth_group_access AuthGroupAccess ON User.uid=AuthGroupAccess.uid  JOIN think_auth_group AuthGroup ON AuthGroup.id=AuthGroupAccess.group_id WHERE ( User.uid = 1 )  [ RunTime:0.0038s ]
+SQL: SELECT * FROM `think_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-04-07T16:25:10+08:00 ] 127.0.0.1 /admin/index/main?_=1460017509617
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001801s ]
+SQL: SHOW COLUMNS FROM `think_panel` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `think_panel` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_panel` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_panel` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `think_panel` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `think_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_auth_group` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: mapping_order /Users/link/WWW/thinkphp-easyui/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Users/link/WWW/thinkphp-easyui/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM think_auth_group_access AS a, think_auth_group AS b WHERE a.group_id = b.id AND a. uid='1' [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `think_branch` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `think_branch` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `think_job` [ RunTime:0.0168s ]
+SQL: SELECT * FROM `think_job` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `think_login_log` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `think_login_log` WHERE `uid` = 1 ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_login_log` WHERE `uid` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000905s ]
+
+[ 2016-04-07T16:25:10+08:00 ] 127.0.0.1 /admin/index/getleftmenu/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001682s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0063s ]
+SQL: SELECT `id` FROM `think_auth_rule`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,title as text,`cls` FROM `think_auth_rule` WHERE `rule_id` = 1 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `id`,title as text,`cls`,name as url FROM `think_auth_rule` WHERE `rule_id` = 4 AND `display` = 1 AND `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','74','75','76','77','78','79','83','84','85','114','115','116','117') ORDER BY sort asc  [ RunTime:0.0025s ]
+
+[ 2016-04-07T16:25:19+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001553s ]
+
+[ 2016-04-07T16:25:29+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003008s ]
+
+[ 2016-04-07T16:25:39+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+
+[ 2016-04-07T16:25:49+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+
+[ 2016-04-07T16:25:59+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+
+[ 2016-04-07T16:26:09+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+

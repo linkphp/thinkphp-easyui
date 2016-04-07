@@ -1,0 +1,108 @@
+/*
+ * 全局重置样式
+ */
+body{margin:0px;padding:0px;font: 13px "Microsoft Yahei", "宋体", "Arial Narrow", HELVETICA !important;width: 100%;}
+a{text-decoration: none;color:#077AC7}
+a:hover{text-decoration: none;color: #f30;}
+img{max-width: 100%;border:none;}
+ul,li{margin:0px;padding:0px;list-style-type: none;}
+div, h1, h2, h3, h4, p, form, ul, label, input, textarea, img, span, dl, dt, dd{margin:0px;padding:0px;}
+.clearfix:after { content: ""; display: block; clear: both; height: 0; }
+.clearfix { zoom: 1; }
+.pull-left { float: left; }
+.pull-right { float: right; }
+.fa{background:none !important;font-size: 14px;}
+.clear {clear:both;height:1px;margin-top:-px;overflow:hidden;}
+/**
+ * 公用样式
+ */
+.oa-loading{height:20px;line-height:20px;padding-left:22px;margin:10px;background:url(../Images/loading.gif) left center no-repeat;}
+.oa-block{margin:0px auto;display:block;}
+
+/*
+ * Easyui组件样式升级改造
+ */
+.panel-header{padding:8px 5px;}
+.tree-file,.tree-folder{background:none;line-height:18px;}
+.tree-node{padding:5px 0px;}
+.window-mask{opacity:0.8;}
+
+/*
+ * 后台样式
+ */
+#body-lock-screen-loading{position: absolute;background-color: #eee;width: 100%;height: 100%;color:#333333;text-align: center;z-index:9999;}
+#north.panel-body-noheader{border-top:none;border-left:none;border-right:none;}
+.link-north-head{background:#196CA7;height:40px;color:#fff;line-height:40px;overflow:hidden;font-family:"宋体";}
+.link-north-head .pull-left{padding-left:5px;}
+.link-north-head .pull-left h1{font-size:22px;}
+.link-north-head .l-btn{color:#fff;border:1px solid transparent;padding:0px;}
+.link-north-head .l-btn:hover{background:none;border:1px solid #fff;}
+.link-north-head .l-btn.s-btn-plain-active{background:none;border:1px solid #fff;}
+.link-north-head .m-btn-downarrow{display: inline-block;font: normal normal normal 14px/1 FontAwesome;font-size: inherit;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;background:none !important;}
+.link-north-head .m-btn-downarrow:before {content: "\f0d7";font-size: 14px;}
+
+.link-north-navbar{color:#333;font-size: 20px;font-weight: bold;height: 40px;line-height: 40px;vertical-align: baseline;background-image:linear-gradient(to bottom, #FFFFFF, #EEEEEE);background-repeat: repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF',endColorstr='#FFEEEEEE',GradientType=0);overflow:hidden;}
+.link-north-navbar ul{font-size: 12px;float:left;margin:0;padding:0;list-style:none}
+.link-north-navbar ul li{float:left;margin:0;padding:0}
+.link-north-navbar ul li a{color:#777777;padding:0 15px;text-decoration:none;text-shadow:0 1px 0 #FFFFFF;display: block;cursor: pointer;}
+.link-north-navbar ul li.active,
+.link-north-navbar ul li:hover{background-color:#E5E5E5;color:#555555;box-shadow:0 3px 8px rgba(0, 0, 0, 0.125) inset;text-decoration:none;}
+
+/**
+ * EasyUI样式改造
+ */
+/**
+ * [左侧菜单一级分类改造]
+ * @type {[type]}
+ */
+#left li .tree-node{padding:0px 10px;height:30px;line-height:30px;margin:5px auto 0px auto;}
+#left li .tree-node-hover{border:1px dashed #fff;}
+#left li .tree-node-selected{border:1px dashed #fff;}
+#left li .tree-node .tree-indent{display:none;}
+#left li .tree-node .tree-hit{margin-top:5px;}
+#left li .tree-title{height:30px;line-height:30px;font-weight:bold;}
+#left li .tree-icon{height:30px;line-height:30px;padding:0px 5px;}
+
+#left li .tree-node{width:160px;height:30px;line-height:30px;margin:5px auto 0px auto;}
+#left li .tree-node-hover{border:1px dashed #fff;}
+#left li .tree-node-selected{border:1px dashed #fff;}
+#left li .tree-node .tree-indent{display:none;}
+#left li .tree-title{height:30px;line-height:30px;}
+#left li .tree-icon{height:30px;line-height:30px;padding:0px 5px;}
+/**
+ * [左侧菜单二级分类改造]
+ * @type {[type]}
+ */
+#left li ul li .tree-node{width:128px;height:30px;line-height:30px;margin:5px auto 0px auto;}
+#left li ul li .tree-node-hover{border:1px dashed #fff;}
+#left li ul li .tree-node-selected{border:1px dashed #fff;}
+#left li ul li .tree-node .tree-indent{display:none;}
+#left li ul li .tree-title{height:30px;line-height:30px;}
+#left li ul li .tree-icon{height:30px;line-height:30px;padding:0px 5px;}
+
+#left li ul li .tree-node{width:128px;height:30px;line-height:30px;margin:5px auto 0px auto;}
+#left li ul li .tree-node-hover{border:1px dashed #fff;}
+#left li ul li .tree-node-selected{border:1px dashed #fff;}
+#left li ul li .tree-node .tree-indent{display:none;}
+#left li ul li .tree-title{height:30px;line-height:30px;font-weight:normal;}
+#left li ul li .tree-icon{height:30px;line-height:30px;padding:0px 5px;}
+/**
+ * [type 表单元素样式改造]
+ * @type {String}
+ */
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+    background-color: #ffffff;
+    border: 1px solid #95b8e7;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    display: inline-block;
+    padding: 4px;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+input[type="radio"], input[type="checkbox"] {
+    line-height: normal;
+    margin: 4px 0 0;
+}
+input[type="file"], input[type="image"], input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}

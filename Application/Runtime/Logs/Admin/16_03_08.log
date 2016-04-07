@@ -1,0 +1,390 @@
+[ 2016-03-08T19:19:13+08:00 ] 127.0.0.1 /admin/db/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_auth_rule` WHERE `name` = 'Db/index' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_behavior_log` [ RunTime:0.0042s ]
+SQL: INSERT INTO `think_behavior_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`,`controller_name`,`controller_action`,`json_data`) VALUES ('1','127.0.0.1','2016-03-08 19:19:13','对方在服务器本地操作','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36','执行 查看数据表','Db/index','{&quot;POST&quot;:[]}') [ RunTime:0.0004s ]
+SQL: SHOW TABLES [ RunTime:0.0005s ]
+SQL: SHOW TABLE STATUS FROM `thinkphp-easyui` [ RunTime:0.0011s ]
+
+[ 2016-03-08T19:19:22+08:00 ] 127.0.0.1 /admin/db/seodb
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `think_auth_rule` WHERE `name` = 'Db/seodb' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_behavior_log` [ RunTime:0.0020s ]
+SQL: INSERT INTO `think_behavior_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`,`controller_name`,`controller_action`,`json_data`) VALUES ('1','127.0.0.1','2016-03-08 19:19:22','对方在服务器本地操作','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36','执行 优化数据','Db/seodb','{&quot;POST&quot;:{&quot;type&quot;:&quot;all&quot;}}') [ RunTime:0.0011s ]
+SQL: SHOW TABLES [ RunTime:0.0003s ]
+SQL: OPTIMIZE TABLE think_auth_group [ RunTime:0.0014s ]
+SQL: OPTIMIZE TABLE think_auth_group_access [ RunTime:0.0021s ]
+SQL: OPTIMIZE TABLE think_auth_rule [ RunTime:0.0017s ]
+SQL: OPTIMIZE TABLE think_behavior_log [ RunTime:0.0020s ]
+SQL: OPTIMIZE TABLE think_branch [ RunTime:0.0006s ]
+SQL: OPTIMIZE TABLE think_config [ RunTime:0.0007s ]
+SQL: OPTIMIZE TABLE think_config_cate [ RunTime:0.0018s ]
+SQL: OPTIMIZE TABLE think_job [ RunTime:0.0007s ]
+SQL: OPTIMIZE TABLE think_login_log [ RunTime:0.0017s ]
+SQL: OPTIMIZE TABLE think_panel [ RunTime:0.0007s ]
+SQL: OPTIMIZE TABLE think_session [ RunTime:0.0234s ]
+SQL: OPTIMIZE TABLE think_unit [ RunTime:0.0025s ]
+SQL: OPTIMIZE TABLE think_user [ RunTime:0.0029s ]
+SQL: OPTIMIZE TABLE think_user_hosp [ RunTime:0.0008s ]
+NOTIC: [2] Missing argument 3 for doReturn(), called in /Users/link/WWW/thinkphp-easyui/Application/Admin/Controller/DbController.class.php on line 52 and defined /Users/link/WWW/thinkphp-easyui/Application/Common/Common/function.php 第 92 行.
+NOTIC: [8] Undefined variable: status /Users/link/WWW/thinkphp-easyui/Application/Common/Common/function.php 第 93 行.
+
+[ 2016-03-08T19:19:22+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+
+[ 2016-03-08T19:19:22+08:00 ] 127.0.0.1 /admin/Db/index?_=1457434489792
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `think_auth_rule` WHERE `name` = 'Db/index' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `think_behavior_log` [ RunTime:0.0051s ]
+SQL: INSERT INTO `think_behavior_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`,`controller_name`,`controller_action`,`json_data`) VALUES ('1','127.0.0.1','2016-03-08 19:19:22','对方在服务器本地操作','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36','执行 查看数据表','Db/index','{&quot;GET&quot;:{&quot;_&quot;:&quot;1457434489792&quot;}}') [ RunTime:0.0004s ]
+SQL: SHOW TABLES [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2016-03-08T19:19:22+08:00 ] 127.0.0.1 /admin/db/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `think_auth_rule` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `think_auth_rule` WHERE `name` = 'Db/index' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_behavior_log` [ RunTime:0.0041s ]
+SQL: INSERT INTO `think_behavior_log` (`uid`,`ip`,`date`,`area`,`country`,`user_agent`,`controller_name`,`controller_action`,`json_data`) VALUES ('1','127.0.0.1','2016-03-08 19:19:22','对方在服务器本地操作','本机地址','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36','执行 查看数据表','Db/index','{&quot;POST&quot;:[]}') [ RunTime:0.0005s ]
+SQL: SHOW TABLES [ RunTime:0.0004s ]
+SQL: SHOW TABLE STATUS FROM `thinkphp-easyui` [ RunTime:0.0019s ]
+
+[ 2016-03-08T19:19:32+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+
+[ 2016-03-08T19:19:42+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+
+[ 2016-03-08T19:19:53+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+
+[ 2016-03-08T19:20:03+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+
+[ 2016-03-08T19:20:14+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+
+[ 2016-03-08T19:20:25+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-03-08T19:20:35+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+
+[ 2016-03-08T19:20:45+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+
+[ 2016-03-08T19:20:56+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+
+[ 2016-03-08T19:21:06+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+
+[ 2016-03-08T19:21:16+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+
+[ 2016-03-08T19:21:26+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+
+[ 2016-03-08T19:21:36+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+
+[ 2016-03-08T19:21:46+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+
+[ 2016-03-08T19:21:57+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002537s ]
+
+[ 2016-03-08T19:22:07+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+
+[ 2016-03-08T19:22:17+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+
+[ 2016-03-08T19:22:27+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+
+[ 2016-03-08T19:22:37+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+
+[ 2016-03-08T19:22:47+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+
+[ 2016-03-08T19:22:57+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T19:23:07+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+
+[ 2016-03-08T19:23:17+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+
+[ 2016-03-08T19:23:27+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+
+[ 2016-03-08T19:23:37+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+
+[ 2016-03-08T19:23:47+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+
+[ 2016-03-08T19:23:58+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+
+[ 2016-03-08T19:24:08+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+
+[ 2016-03-08T19:24:18+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+
+[ 2016-03-08T19:24:28+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+
+[ 2016-03-08T19:24:38+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+
+[ 2016-03-08T19:24:48+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+
+[ 2016-03-08T19:24:58+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-03-08T19:25:08+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+
+[ 2016-03-08T19:25:18+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+
+[ 2016-03-08T19:25:28+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+
+[ 2016-03-08T19:25:38+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+
+[ 2016-03-08T19:25:48+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-03-08T19:25:58+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+
+[ 2016-03-08T19:26:08+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+
+[ 2016-03-08T19:26:18+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+
+[ 2016-03-08T19:26:28+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+
+[ 2016-03-08T19:26:39+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+
+[ 2016-03-08T19:26:49+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+
+[ 2016-03-08T19:26:59+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+
+[ 2016-03-08T19:27:09+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+
+[ 2016-03-08T19:27:19+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-03-08T19:27:30+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+
+[ 2016-03-08T19:27:40+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+
+[ 2016-03-08T19:27:51+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+
+[ 2016-03-08T19:28:01+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-03-08T19:28:11+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+
+[ 2016-03-08T19:28:21+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+
+[ 2016-03-08T19:28:31+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+
+[ 2016-03-08T19:28:41+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+
+[ 2016-03-08T19:28:51+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+
+[ 2016-03-08T19:29:01+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+
+[ 2016-03-08T19:29:11+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+
+[ 2016-03-08T19:29:21+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+
+[ 2016-03-08T19:29:33+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002508s ]
+
+[ 2016-03-08T19:29:42+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+
+[ 2016-03-08T19:29:52+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+
+[ 2016-03-08T20:26:25+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+
