@@ -145,3 +145,68 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
 
+[ 2016-04-07T16:28:30+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+
+[ 2016-04-07T16:28:40+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+
+[ 2016-04-07T16:28:50+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-04-07T16:29:00+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+
+[ 2016-04-07T16:29:10+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003627s ]
+
+[ 2016-04-07T16:29:21+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+
+[ 2016-04-07T16:29:31+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+
+[ 2016-04-07T16:29:41+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+
+[ 2016-04-07T16:29:52+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003561s ]
+
+[ 2016-04-07T16:30:02+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001546s ]
+
+[ 2016-04-07T16:30:12+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004030s ]
+
+[ 2016-04-07T16:30:22+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+
+[ 2016-04-07T16:30:32+08:00 ] 127.0.0.1 /admin/login/session_timeout
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+
